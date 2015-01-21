@@ -12,13 +12,7 @@ apt-get install -y r-base-core
 apt-get install -y libapparmor1
 wget -q http://download1.rstudio.org/rstudio-0.98.1091-amd64.deb -O /tmp/rstudio-0.98.1091-amd64.deb
 
-#wating for wget to finish downloadking
-NEXT_WAIT_TIME=0
-until [-f "/tmp/rstudio-server-0.98.1091-amd64.deb"] || [ $NEXT_WAIT_TIME -eq 20 ]; do
-   sleep $(( NEXT_WAIT_TIME++ ))
-done
-
-gdebi --non-interactive /tmp/rstudio-server-0.98.1091-amd64.deb
+dpkg -i /tmp/rstudio-server-0.98.1091-amd64.deb
 
 #mysql
 echo "Preparing MySQL"
