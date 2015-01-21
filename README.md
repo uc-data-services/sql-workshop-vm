@@ -4,7 +4,7 @@ Vagrant file and provision shell script for setting up MySQL and Rstudio.
 
 ## Installation Instructions
 
-# Mac
+# Windows and Mac
 
 We are using Vagrant to build a virtual machine for this workshop.  Vagrant requires a provider (virtualbox) and a command line with ssh.
 
