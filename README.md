@@ -19,8 +19,8 @@ We are using Vagrant to build a virtual machine for this workshop.  Vagrant requ
 
 # Linux
 
-Just install the following packages:
+Just install the following packages in your distribution:
 
-apt-get r-base-core libapparmor1 mysql-server
+r-base-core libapparmor1 mysql-server
 
-Download and install RSTudio http://www.rstudio.com/products/rstudio/download/
+Download and install RStudio http://www.rstudio.com/products/rstudio/download/
