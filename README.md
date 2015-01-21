@@ -19,6 +19,7 @@ We are using Vagrant to build a virtual machine for this workshop.  Vagrant requ
 6.  Change directories into sql-workshop-vm:  `cd sql-workshop-vm`
 7.  Run `vagrant up` in the directory (get a cup of coffee this will take 5-10 min).
 8.  After `vagrant up` finishes, test the installation by running the command `vagrant ssh`. If asked for a password, type "vagrant". This should take you to a new "vagrant" command prompt. 
+9.  You should also be able to open a browser and navigate to `http://localhost:8189` to access RStudio. Use `vagrant` for both the username and password. 
 9.  Type `exit` to return to your host operating system, then `vagrant suspend` to turn off the virtual machine.
 
 
