@@ -10,8 +10,8 @@ echo "Installing R & RStudio"
 apt-get install -y gdebi-core
 apt-get install -y r-base-core
 apt-get install -y libapparmor1
-wget -q http://download1.rstudio.org/rstudio-0.98.1091-amd64.deb
-gdebi --non-interactive rstudio-server-0.98.1091-amd64.deb
+wget -q http://download1.rstudio.org/rstudio-0.98.1091-amd64.deb -O /tmp/rstudio-0.98.1091-amd64.deb
+gdebi --non-interactive /tmp/rstudio-server-0.98.1091-amd64.deb
 
 #mysql
 echo "Preparing MySQL"
