@@ -15,7 +15,7 @@ We are using Vagrant to build a virtual machine for this workshop.  Vagrant requ
   * **Mac only** - install Git http://git-scm.com/download/mac
 3.  Open a terminal client. In Mac search in spotlight for 'terminal'.  In Windows, click Start and search for Git Bash.
 4.  In the terminal client, navigate to where you want to do your work using 'cd <directory>' (e.g. 'cd Desktop' in windows).
-5.  Type git clone https://github.com/uc-data-services/sql-workshop-vm.git. Alternatively, you can download and unzip the repository https://github.com/uc-data-services/sql-workshop-vm/archive/master.zip
+5.  Type `git clone https://github.com/uc-data-services/sql-workshop-vm.git`. Alternatively, you can download and unzip the repository https://github.com/uc-data-services/sql-workshop-vm/archive/master.zip
 6.  Change directories into sql-workshop-vm:  `cd sql-workshop-vm`
 7.  Run `vagrant up` in the directory (get a cup of coffee this will take 5-10 min).
 8.  After `vagrant up` finishes, test the installation by running the command `vagrant ssh`. If asked for a password, type "vagrant". This should take you to a new "vagrant" command prompt. 
