@@ -6,7 +6,7 @@ Vagrant file and provision shell script for setting up MySQL and Rstudio.
 
 ### Windows and Mac
 
-We are using Vagrant to build a virtual machine for this workshop.  Vagrant requires a provider (virtualbox) and a command line with ssh.
+We are using Vagrant to build a virtual machine for this workshop.  Vagrant requires a provider (virtualbox) and a command line with ssh. Vagrant supports configuring a virtual machine via instructions in code. 
 
 1. If you have **Windows 8**, disable **Hyper-V**, by going to **Programs and Features** and uncheck (if checked) the box next to **Hyper-V**. **Hyper-V** will interfere with Vagrant & Virtualbox. 
 2. Virtualbox - download and install latest for your OS (4.3.20) https://www.virtualbox.org/wiki/Downloads
