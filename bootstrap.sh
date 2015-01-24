@@ -13,7 +13,11 @@ apt-get install gdebi-core -y > /dev/null
 
 apt-get install r-base-core -y > /dev/null
 apt-get install libapparmor1 -y > /dev/null
+apt-get install libmysqlclient-dev -y -> /dev/null
+
 wget -q http://download2.rstudio.org/rstudio-server-0.98.1091-i386.deb -O /tmp/rstudio-server-0.98.1091-i386.deb
+wget -q http://cran.cnr.berkeley.edu/src/contrib/DBI_0.3.1.tar.gz -O /tmp/DBI_0.3.1.tar.gz
+wget -q http://cran.cnr.berkeley.edu/src/contrib/RMySQL_0.10.1.tar.gz -O /tmp/RMySQL_0.10.1.tar.gz
 
 gdebi --non-interactive /tmp/rstudio-server-0.98.1091-i386.deb > /dev/null
 
@@ -32,6 +36,15 @@ EOF
 echo "Installing MySQL"
 
 sudo service mysql restart
+
+
+echo "INstalling some R packages"
+
+chmod -R 777 /usr/lib/R/library
+chmod -R 777 /usr/share/R/doc
+
+R CMD INSTALL /tmp/DBI_0.3.1.tar.gz
+R CMD INSTALL /tmp/RMySQL_0.10.1.tar.gz
 
 echo "You've been provisioned"
 echo "Type vagrant ssh to enter the VM."
