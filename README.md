@@ -4,7 +4,7 @@ Vagrant file and provision shell script for setting up MySQL and Rstudio.
 
 ## Installation Instructions
 
-# Windows and Mac
+### Windows and Mac
 
 We are using Vagrant to build a virtual machine for this workshop.  Vagrant requires a provider (virtualbox) and a command line with ssh.
 
@@ -24,10 +24,19 @@ We are using Vagrant to build a virtual machine for this workshop.  Vagrant requ
 9.  Type `exit` to return to your host operating system, then `vagrant suspend` to turn off the virtual machine.
 
 
-# Linux
+### Linux
 
 Just install the following packages in your distribution:
 
 r-base-core libapparmor1 mysql-server
 
 Download and install RStudio http://www.rstudio.com/products/rstudio/download/
+
+## Reprovisioning the machine
+
+Vagrant supports reprovisioning the machine with new tools and packages.  
+
+1. If you used `git clone` to grab the repository during installation, you can `git pull` inside the `sql-workshop-vm` to get the changes. 
+2. If you downloaded the zip file above, you can download the zip again and extract it again overwriting the existing files with the changes. 
+3. Inside the directory, run `vagrant reload --provision`. This command tells vagrant to just re-run the provisioning part of the machine build. Since you've already downloaded the virtual machine image, this reload should be faster.
+4. After this reload, you can open RStudio in the browser to confirm that you have both the `DBI` and `RMySQL` installed.  
